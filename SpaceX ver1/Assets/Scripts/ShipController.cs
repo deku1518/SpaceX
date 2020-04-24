@@ -2,17 +2,29 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+    
+
 public class ShipController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public float speed;
+    public float Min, Max, Mini, Maxi;
+    public float tilt;
 
-    // Update is called once per frame
-    void Update()
+    public Rigidbody rigidbody;
+
+
+
+
+    void FixedUpdate ()
+
     {
+        float moveHorizontal = Input.GetAxis("Horizontal");
+        float moveVertical = Input.GetAxis("Vertical");
+        
+        Vector3 movement = new Vector3(moveHorizontal, moveVertical, 0.0f);
+        rigidbody.velocity = movement * speed;
+        rigidbody.position = new Vector3(Mathf.Clamp(rigidbody.position.x, Min, Max), Mathf.Clamp(rigidbody.position.y, Mini, Maxi), -1.02f);
         
     }
 }
