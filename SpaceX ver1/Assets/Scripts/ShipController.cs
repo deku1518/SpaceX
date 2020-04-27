@@ -9,12 +9,24 @@ public class ShipController : MonoBehaviour
 {
     public float speed;
     public float Min, Max, Mini, Maxi;
-    public float tilt;
-
+    public GameObject Missile;
+    public Transform MissileSpawn;
     public Rigidbody rigidbody;
+    public float fireRate;
+    private float nextFire;
 
 
+    void Update()
+    {
+        if (Input.GetButton("Fire1") && Time.time > nextFire)
+        {
+            nextFire = Time.time + fireRate;
+            Instantiate(Missile, MissileSpawn.position, MissileSpawn.rotation);
+        }
+    }
 
+    
+        
 
     void FixedUpdate ()
 
