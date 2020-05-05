@@ -549,7 +549,7 @@ GameObject:
   - component: {fileID: 2073919287}
   m_Layer: 0
   m_Name: Boundary
-  m_TagString: Untagged
+  m_TagString: Boundary
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -565,8 +565,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.9935717, y: 0.031382922, z: 55}
-  m_Center: {x: -0.0032142336, y: 0.36900106, z: 0.34124526}
+  m_Size: {x: 1.0000001, y: 1.0056169, z: 2}
+  m_Center: {x: -0.0021428962, y: -0.1087482, z: 0.34124526}
 --- !u!114 &2073919287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -587,8 +587,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2073919285}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.01, y: 2.82, z: -2.54}
-  m_LocalScale: {x: 17.214144, y: 11.812853, z: 10}
+  m_LocalPosition: {x: 0.01, y: 2.34, z: 0}
+  m_LocalScale: {x: 17.214144, y: 11.812853, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
