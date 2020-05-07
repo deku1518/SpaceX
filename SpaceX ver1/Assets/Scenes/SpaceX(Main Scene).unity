@@ -179,10 +179,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 15
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -190,7 +190,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Game Over!
+  m_Text: 
 --- !u!222 &223481855
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -291,7 +291,7 @@ MonoBehaviour:
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -299,7 +299,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Restart
+  m_Text: 
 --- !u!222 &459337016
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -879,8 +879,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1692645430
-BoxCollider:
+--- !u!136 &1692645430
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -889,9 +889,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 4.871204, y: 2.8190098, z: 0.2}
-  m_Center: {x: 0.124399, y: -0.03486312, z: 0}
+  m_Radius: 0.55889726
+  m_Height: 2.9468307
+  m_Direction: 1
+  m_Center: {x: 0, y: -0.04529389, z: 0}
 --- !u!1 &1773977350
 GameObject:
   m_ObjectHideFlags: 0
@@ -951,10 +952,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 16
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -1016,8 +1017,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   asteroid: {fileID: 2777420758450310145, guid: 16b52296050ae63418376345cf1aa9ea,
     type: 3}
-  spawnValues: {x: 8.1, y: 16.7, z: 0}
-  asteroidCount: 8
+  spawnValues: {x: 7.9, y: 18.7, z: 0}
+  asteroidCount: 5
   spawnWait: 0.5
   startWait: 1
   waveWait: 4
@@ -1053,8 +1054,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.0000001, y: 1.0024949, z: 2}
-  m_Center: {x: -0.0021428962, y: -0.11030944, z: 0.3412453}
+  m_Size: {x: 1.0000001, y: 0.99570674, z: 2}
+  m_Center: {x: -0.0021428962, y: -0.11370409, z: 0.3412453}
 --- !u!114 &2073919287
 MonoBehaviour:
   m_ObjectHideFlags: 0

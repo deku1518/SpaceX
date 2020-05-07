@@ -25,13 +25,15 @@ public class AsteroidDestroy : MonoBehaviour
     void OnTriggerEnter(Collider other)
     
     {
-        if(other.tag == "Boundary")
+        if(other.tag == "Boundary" || other.tag == "Enemy")
         {
             return;
         }
         if (other.tag == "Player")
         {
+            scoreValue -= 5;
             gameController.GameOver();
+
         }
         gameController.AddScore(scoreValue);
         Destroy(other.gameObject);
