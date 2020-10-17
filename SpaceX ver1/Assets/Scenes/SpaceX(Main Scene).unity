@@ -814,7 +814,7 @@ MonoBehaviour:
   Missile: {fileID: 3256830863133260801, guid: b40a456571f609540bb6779b0adabf0f, type: 3}
   MissileSpawn: {fileID: 346360785}
   rigidbody: {fileID: 1692645426}
-  fireRate: 0.25
+  fireRate: 0.1
 --- !u!212 &1692645428
 SpriteRenderer:
   m_ObjectHideFlags: 0
